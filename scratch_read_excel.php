@@ -1,0 +1,1 @@
+<?php require 'C:/Users/hp/AppData/Roaming/Composer/vendor/autoload.php'; $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load('KAS BKM - WEB - NEW.xlsx'); $worksheet = $spreadsheet->getActiveSheet(); $data = $worksheet->rangeToArray('A1:L10', null, true, true, true); print_r($data);
